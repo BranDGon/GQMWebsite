@@ -1,116 +1,129 @@
 <!DOCTYPE html>
-<html>
-<header style="display: flex; align-items: center; justify-content: space-between; padding: 8px 5%; background-color: #000000; border-bottom: 2px solid #D32F2F;">
-    
-    <a href="index.html">
-        <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry" style="max-height: 70px; width: auto; display: block;">
-    </a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GQ Masonry & Construction, LLC</title>
+    <link rel="icon" type="image/png" href="GQ Masonry Logo_Original.png">
+    <style>
+        /* General Styles */
+        body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; overflow-x: hidden; }
+        
+        /* Responsive Header */
+        .main-header {
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 10px 5%; 
+            background-color: #000000; 
+            border-bottom: 2px solid #D32F2F;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .main-header img { max-height: 60px; width: auto; transition: 0.3s; }
+        .call-btn { 
+            background-color: #D32F2F; color: white; padding: 10px 18px; 
+            text-decoration: none; border-radius: 5px; font-weight: bold; 
+            font-size: 0.9rem; white-space: nowrap; 
+        }
 
-    <a href="tel:2106875550" style="background-color: #D32F2F; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1rem; display: inline-block;">
-        📞 CALL NOW
-    </a>
+        /* Hero & Sections */
+        .hero { background: #f0f0f0; padding: 60px 20px; text-align: center; border-bottom: 4px solid #D32F2F; }
+        .services { padding: 40px 20px; max-width: 900px; margin: auto; text-align: center; }
+        
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-grid img:hover { transform: scale(1.03); }
 
-</header>
-   
-    <section style="text-align: center; padding: 40px 20px 10px 20px; background-color: #ffffff;">
-    <h1 style="margin: 0; font-size: 2.5rem; color: #000000; letter-spacing: 3px; font-weight: 900;">
-        GQ MASONRY & CONSTRUCTION, LLC
-    </h1>
-    
-    <p style="color: #000000; font-size: 1.1rem; letter-spacing: 1px; margin-top: 10px; font-weight: 500; text-transform: uppercase;">
-        Faith • Family • Integrity
-    </p>
+        .footer { background: #1a1a1a; color: #888; text-align: center; padding: 30px; font-size: 14px; }
 
-    <p style="font-style: italic; color: #444; font-size: 1.15rem; max-width: 600px; margin: 15px auto 0 auto; line-height: 1.5;">
-        "Honing the craft at my father’s side since age nine. <br> 
-        Building a legacy in stone for nearly 40 years."
-    </p>
-</section>
-
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px 10% 50px 10%; background-color: #f9f9f9; gap: 40px;">
-    
-    <div style="flex: 1; min-width: 300px; max-width: 400px;">
-        <img src="ASG picture_worktruck.jpg" alt="The Craftsman" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border: 1px solid #ddd;">
-    </div>
-
-    <div style="flex: 1; min-width: 300px; text-align: left;">
-        <h2 style="font-size: 2rem; color: #000; margin-bottom: 15px; font-weight: 800;">Our Story</h2>
-        <p style="font-size: 1.1rem; line-height: 1.6; color: #333; margin: 0;">
-            My journey in masonry began on job sites at the age of nine, learning the discipline of the trade from my father. Today, with nearly 40 years of hands-on experience, I remain dedicated to the craft he taught me. 
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.6; color: #333; margin-top: 10px;">
-            At GQ Masonry, we believe that every stone laid is a reflection of our commitment to hard work and Christian values. We build lasting relationships through honesty and quality craftsmanship.
-        </p>
-    </div>
-    </section>
-<!--<header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 5%; background-color: #ffffff; border-bottom: 1px solid #eee;">
-    <a href="index.html">
-        <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry Logo" style="max-height: 60px; width: auto;">
-    </a>
-    <a href="tel:2106879733" style="background-color: #D32F2F; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">
-        📞 Call
-    </a>-->
-<!--<header style="text-align: center; padding: 20px 0; background-color: #ffffff; border-bottom: 2px solid #eee;">
-    <a href="index.html">
-        <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry Logo" style="max-width: 250px; height: auto;">
-    </a>
-    <div style="text-align: center; margin: 20px 0;">
-    <a href="tel:2106875550" style="background-color: #d4af37; color: white; padding: 15px 25px; text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 8px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        📞 Call for a Free Estimate
-    </a>
-    </div>
-
-</header> -->
-   <!-- <div class="top-bar">
-        <h2 style="letter-spacing: 3px; margin: 0;">GQ MASONRY & Construction, LLC</h2>-->
-   
+        /* Desktop Adjustments */
+        @media (min-width: 768px) {
+            .main-header img { max-height: 80px; }
+            .call-btn { padding: 12px 25px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
 <body>
 
+    <header class="main-header">
+        <a href="index.html">
+            <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry">
+        </a>
+        <a href="tel:2106875550" class="call-btn">📞 CALL NOW</a>
+    </header>
+
+    <section style="text-align: center; padding: 40px 20px 10px 20px; background-color: #ffffff;">
+        <h1 style="margin: 0; font-size: 2.2rem; color: #000000; letter-spacing: 2px; font-weight: 900;">
+            GQ MASONRY & CONSTRUCTION, LLC
+        </h1>
+        <p style="color: #000000; font-size: 1rem; letter-spacing: 1px; margin-top: 10px; font-weight: 500; text-transform: uppercase;">
+            Faith • Family • Integrity
+        </p>
+        <p style="font-style: italic; color: #444; font-size: 1.15rem; max-width: 600px; margin: 15px auto 0 auto; line-height: 1.5;">
+            "Learning at my father’s side since age nine. <br> 
+            Building a legacy in stone for nearly 40 years."
+        </p>
+    </section>
+
+    <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 30px 10%; background-color: #f9f9f9; gap: 40px;">
+        <div style="flex: 1; min-width: 300px; max-width: 400px;">
+            <img src="ASG picture_worktruck.jpg" alt="The Craftsman" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border: 1px solid #ddd;">
+        </div>
+        <div style="flex: 1; min-width: 300px; text-align: left;">
+            <h2 style="font-size: 2rem; color: #000; margin-bottom: 15px; font-weight: 800;">Our Story</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">
+                My journey in masonry began on job sites at the age of nine, learning the discipline of the trade from my father. Today, with nearly 40 years of hands-on experience, I remain dedicated to the craft he taught me. 
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333; margin-top: 10px;">
+                At GQ Masonry, we believe that every stone laid is a reflection of our commitment to hard work and Christian values. We build lasting relationships through honesty and quality craftsmanship.
+            </p>
+        </div>
+    </section>
+
     <div class="hero">
-        <h1>Masterful Masonry & Stone Work</h1>
-        <p>Expertly crafted brick and stone for your home or business.</p>   
-    <a href="mailto:asg.gqmasonry@gmail.com?subject=Estimate Request for GQ Masonry&body=Name:%0D%0APhone:%0D%0AProject Address:%0D%0ADescription of work (Stone, Brick, Patio, etc):" 
-   style="background-color: #D32F2F; color: white; padding: 15px 25px; text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 8px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-   Email to Request an Estimate
-    </a> 
+        <h2 style="font-size: 2rem; margin-bottom: 10px;">Masterful Masonry & Stone Work</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 25px;">Expertly crafted brick and stone for your home or business.</p>   
+        <a href="mailto:asg.gqmasonry@gmail.com?subject=Estimate+Request+for+GQ+Masonry&body=Name:%0D%0APhone:%0D%0AProject+Address:%0D%0ADescription+of+work:" 
+           style="background-color: #D32F2F; color: white; padding: 15px 30px; text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 8px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+           Email for Free Estimate
+        </a> 
     </div>
+
     <div class="services">
-        <h3>Our Expertise</h3>
+        <h3 style="font-size: 1.8rem; border-bottom: 2px solid #D32F2F; display: inline-block; padding-bottom: 5px;">Our Expertise</h3>
         <p>• Custom Brickwork & New Construction</p>
         <p>• Man-Made Fireplaces, Chimney Repair & Tuckpointing</p>
         <p>• Retaining Walls, Patios, & Outdoor Kitchens</p>
-        <hr>
-        <p><strong>Serving Central & South Texas Area | Licensed & Insured</strong></p>
+        <p style="margin-top: 20px;"><strong>Serving Central & South Texas Area | Licensed & Insured</strong></p>
     </div>
-<head>
-    <title>GQ Masonry & Construction, LLC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="GQ Masonry Logo_Original.png">
-    <style>
-        body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; }
-        .top-bar { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
-        .hero { background: #f0f0f0; padding: 80px 20px; text-align: center; border-bottom: 4px solid #b8860b; }
-        .btn { background: #b8860b; color: white; padding: 15px 25px; text-decoration: none; display: inline-block; margin-top: 20px; border-radius: 3px; }
-        .services { padding: 40px; max-width: 900px; margin: auto; }
-        .footer { background: #1a1a1a; color: #888; text-align: center; padding: 30px; font-size: 12px; }
-    </style>
-</head>
-        <div class="services" style="background: #fdfdfd; border-top: 1px solid #eee;">
-        <h3>Projects</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-            <div style="background: #ddd; height: 200px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc;">
-               <img src="ASG picture_worktruck.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Masonry Work">
-            </div>
-            <div style="background: #ddd; height: 200px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc;">
-                <span style="color: #888;">[IMAG0084.jpg]</span>
-            </div>
-            <div style="background: #ddd; height: 200px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc;">
-                <span style="color: #888;">[IMAG0567.jpg]</span>
-            </div>
+
+    <h3 style="text-align: center; font-size: 2rem; margin-top: 40px;">Recent Projects</h3>
+    <div class="gallery-grid">
+        <img src="IMG_0959_Original.jpeg" alt="Work">
+        <img src="IMG0084.jpg" alt="Masonry Work 1">
+        <img src="IMG0567.jpg" alt="Masonry Work 2">
         </div>
-    </div>
+
     <div class="footer">
         &copy; 2026 GQ MASONRY & Construction, LLC | Built on Christian Values
     </div>
+
 </body>
 </html>
