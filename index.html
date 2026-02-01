@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="GQ Masonry Logo_Original.png">
     <style>
         /* General Styles */
-        body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; overflow-x: hidden; }
+        body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
         
         /* Responsive Header */
         .main-header {
@@ -21,7 +21,21 @@
             top: 0;
             z-index: 1000;
         }
+        .header-left { display: flex; align-items: center; gap: 40px; }
         .main-header img { max-height: 60px; width: auto; transition: 0.3s; }
+        
+        /* Navigation Menu */
+        .nav-menu { display: flex; gap: 20px; }
+        .nav-menu a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .nav-menu a:hover { color: #D32F2F; }
+
         .call-btn { 
             background-color: #D32F2F; color: white; padding: 10px 18px; 
             text-decoration: none; border-radius: 5px; font-weight: bold; 
@@ -53,19 +67,31 @@
 
         .footer { background: #1a1a1a; color: #888; text-align: center; padding: 30px; font-size: 14px; }
 
-        /* Desktop Adjustments */
+        /* Desktop vs Mobile Adjustments */
         @media (min-width: 768px) {
             .main-header img { max-height: 80px; }
             .call-btn { padding: 12px 25px; font-size: 1.1rem; }
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu { display: none; } /* Keeps header clean on mobile */
         }
     </style>
 </head>
 <body>
 
     <header class="main-header">
-        <a href="index.html">
-            <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry">
-        </a>
+        <div class="header-left">
+            <a href="index.html">
+                <img src="GQ Masonry Logo_Original.png" alt="GQ Masonry">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="fireplace-maintenance.html">Mason's Blog</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+        </div>
         <a href="tel:2106875550" class="call-btn">📞 CALL NOW</a>
     </header>
 
@@ -113,25 +139,45 @@
         <p>• Retaining Walls, Patios, & Outdoor Kitchens</p>
         <p style="margin-top: 20px;"><strong>Serving Central & South Texas Area | Licensed & Insured</strong></p>
     </div>
-<div style="text-align: center; padding: 20px; background: #f9f9f9;">
-    <p style="font-weight: bold;">Safety First: Is your chimney winter-ready?</p>
-    <a href="fireplace-maintenance.html" style="color: #D32F2F; font-weight: bold; text-decoration: underline;">
-        Read our guide on Fireplace Integrity →
-    </a>
-</div>
 
-    <h3 style="text-align: center; font-size: 2rem; margin-top: 40px;">Projects</h3>
+    <div style="text-align: center; padding: 20px; background: #f9f9f9;">
+        <p style="font-weight: bold;">Safety First: Is your chimney winter-ready?</p>
+        <a href="fireplace-maintenance.html" style="color: #D32F2F; font-weight: bold; text-decoration: underline;">
+            Read our guide on Fireplace Integrity →
+        </a>
+    </div>
+
+    <h3 id="projects" style="text-align: center; font-size: 2rem; margin-top: 40px;">Projects</h3>
     <div class="gallery-grid">
         <img src="IMG_0931_Original.jpeg" alt="Fireplace">
         <img src="IMAG0567_Original.jpeg" alt="Walkway">
         <img src="IMG_1645_Original.jpeg" alt="Wall and Walkway">
+    </div>
+
+    <section id="faq" style="padding: 60px 10%; background-color: #ffffff;">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;">Frequently Asked Questions</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                <p style="font-weight: bold; color: #D32F2F;">Do you provide free estimates?</p>
+                <p>Yes. We provide detailed, complimentary onsite estimates for all masonry projects within our service area.</p>
+            </div>
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                <p style="font-weight: bold; color: #D32F2F;">What is Tuckpointing?</p>
+                <p>It's the process of repairing mortar joints between stones. It's essential for preventing water damage and maintaining structural integrity.</p>
+            </div>
+            <div style="margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                <p style="font-weight: bold; color: #D32F2F;">Are you licensed and insured?</p>
+                <p>Yes. GQ Masonry & Construction, LLC is fully licensed and insured for your peace of mind.</p>
+            </div>
         </div>
-<section style="background-color: #f4f4f4; padding: 30px 20px; text-align: center; border-top: 1px solid #ddd;">
-    <h4 style="margin-bottom: 10px; color: #000;">Proudly Serving Central & South Texas</h4>
-    <p style="max-width: 800px; margin: 0 auto; color: #555; font-size: 0.95rem;">
-        San Antonio • Boerne • New Braunfels • Seguin • San Marcos • Bulverde • Spring Branch • Canyon Lake • Schertz • Cibolo
-    </p>
-</section>
+    </section>
+
+    <section style="background-color: #f4f4f4; padding: 30px 20px; text-align: center; border-top: 1px solid #ddd;">
+        <h4 style="margin-bottom: 10px; color: #000;">Proudly Serving Central & South Texas</h4>
+        <p style="max-width: 800px; margin: 0 auto; color: #555; font-size: 0.95rem;">
+            San Antonio • Boerne • New Braunfels • Seguin • San Marcos • Bulverde • Spring Branch • Canyon Lake • Schertz • Cibolo
+        </p>
+    </section>
 
     <div class="footer">
         &copy; 2026 GQ MASONRY & Construction, LLC | Built on Christian Values
