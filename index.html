@@ -7,6 +7,31 @@
     <link rel="icon" type="image/png" href="GQ Masonry Logo_Original.png">
     <style>
         /* General Styles */
+       .top-bar {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #333;
+}
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.top-bar a:hover {
+    color: #D32F2F;
+}
+
+/* Hide top bar info on very small screens to prevent crowding */
+@media (max-width: 600px) {
+    .top-bar-info { display: none; }
+    .top-bar { justify-content: center; }
+}
         body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
         
         /* Responsive Header */
@@ -79,7 +104,15 @@
     </style>
 </head>
 <body>
-
+<div class="top-bar">
+    <div class="top-bar-info">
+        <span>📍 San Antonio & Surrounding Areas</span>
+    </div>
+    <div>
+        <a href="tel:2106875550">📞 (210) 687-5550</a>
+        <a href="mailto:asg.gqmasonry@gmail.com">✉️ asg.gqmasonry@gmail.com</a>
+    </div>
+</div>
     <header class="main-header">
         <div class="header-left">
             <a href="index.html">
